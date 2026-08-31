@@ -11,14 +11,25 @@ const projectImages = [
   `${assetBase}assets/projects/shadow-courtyard.png`,
 ];
 
+const trailImages = [
+  `${assetBase}assets/trail/huaban-6636160457.webp`,
+  `${assetBase}assets/trail/huaban-6636160467.webp`,
+  `${assetBase}assets/trail/huaban-6636160471.webp`,
+  `${assetBase}assets/trail/huaban-6636160480.webp`,
+  `${assetBase}assets/trail/huaban-6636160481.webp`,
+  `${assetBase}assets/trail/huaban-6636160482.webp`,
+  `${assetBase}assets/trail/huaban-6636160488.webp`,
+  `${assetBase}assets/trail/huaban-6636160500.webp`,
+];
+
 const seedTrail = [
-  { src: projectImages[0], left: "5.4%", top: "22.4%", width: "8.8%", opacity: 1, aspect: "0.86" },
-  { src: projectImages[1], left: "16.3%", top: "39%", width: "8%", opacity: 0.82, aspect: "1.16" },
-  { src: projectImages[2], left: "26.1%", top: "51.7%", width: "5.1%", opacity: 0.7, aspect: "1.12" },
-  { src: projectImages[3], left: "33%", top: "63%", width: "3.8%", opacity: 0.58, aspect: "1.35" },
-  { src: projectImages[4], left: "38.1%", top: "66.6%", width: "2.6%", opacity: 0.48, aspect: "1" },
-  { src: projectImages[1], left: "42%", top: "71.2%", width: "1.8%", opacity: 0.31, aspect: "1.1" },
-  { src: projectImages[2], left: "45.1%", top: "74.3%", width: "1.2%", opacity: 0.17, aspect: "1.1" },
+  { src: trailImages[0], left: "5.4%", top: "22.4%", width: "8.8%", opacity: 1, aspect: "1" },
+  { src: trailImages[1], left: "16.3%", top: "39%", width: "8%", opacity: 0.82, aspect: "1" },
+  { src: trailImages[2], left: "26.1%", top: "51.7%", width: "5.1%", opacity: 0.7, aspect: "1" },
+  { src: trailImages[3], left: "33%", top: "63%", width: "3.8%", opacity: 0.58, aspect: "1" },
+  { src: trailImages[4], left: "38.1%", top: "66.6%", width: "2.6%", opacity: 0.48, aspect: "1" },
+  { src: trailImages[5], left: "42%", top: "71.2%", width: "1.8%", opacity: 0.31, aspect: "1" },
+  { src: trailImages[6], left: "45.1%", top: "74.3%", width: "1.2%", opacity: 0.17, aspect: "1" },
 ];
 
 const projects = [
@@ -49,10 +60,10 @@ export function App() {
 
     setHasMoved(true);
     lastPoint.current = { x, y, time: now };
-    const index = sequence.current++ % projectImages.length;
+    const index = sequence.current++ % trailImages.length;
     const id = `${Date.now()}-${sequence.current}`;
     const width = 92 + (index % 4) * 22;
-    const nextItem = { id, x, y, width, src: projectImages[index] };
+    const nextItem = { id, x, y, width, src: trailImages[index] };
 
     setTrail((items) => [...items.slice(-7), nextItem]);
     window.setTimeout(() => {
