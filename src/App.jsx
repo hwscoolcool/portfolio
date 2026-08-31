@@ -6,8 +6,8 @@ const projectImages = [
   `${assetBase}assets/projects/white-facade.png`,
   `${assetBase}assets/projects/monolith-brand.png`,
   `${assetBase}assets/projects/soft-form.png`,
-  `${assetBase}assets/projects/line-light.png`,
-  `${assetBase}assets/projects/green-fold.png`,
+  `${assetBase}assets/projects/billiards-arena.jpg`,
+  `${assetBase}assets/projects/billiards-front.jpg`,
   `${assetBase}assets/projects/shadow-courtyard.png`,
 ];
 
@@ -33,8 +33,8 @@ const seedTrail = [
 ];
 
 const projects = [
-  { title: "Fold", type: "Brand identity,\nArt direction", src: projectImages[4], tone: "dark" },
-  { title: "Linea", type: "Product design,\nCreative direction", src: projectImages[3], tone: "dark" },
+  { title: "Fold", type: "Brand identity,\nArt direction", src: projectImages[4], tone: "light" },
+  { title: "Linea", type: "Product design,\nCreative direction", src: projectImages[3], tone: "light" },
   { title: "North Hall", type: "Brand strategy,\nDigital experience", src: projectImages[0], tone: "dark", wide: true },
   { title: "Aurel", type: "Brand identity,\nPackaging", src: projectImages[1], tone: "light" },
   { title: "Courtyard", type: "Spatial identity,\nArt direction", src: projectImages[5], tone: "light" },
